@@ -1,0 +1,68 @@
+.trending-container {
+  border-radius: 20px;
+  margin-bottom: 14px;
+  padding: 20px;
+  width: 356px;
+  border: $color-2 solid 2px;
+  box-shadow: 2px 2px 5px 2px $shadow;
+
+  h4 {
+    font-size: 1.2rem;
+    color: $color-2;
+    margin-bottom: 12px;
+  }
+  ul {
+
+    li {
+      margin: 5px 0;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 68px 1fr;
+      background: $color-4;
+      border-radius: 20px;
+      border : $color-2 2px solid;
+      padding: 16px;
+      box-shadow: 2px 2px 5px 2px $shadow;
+      transition: .2s;
+      margin-bottom: 20px;
+
+      &:hover {
+        box-shadow: 5px 5px 15px 5px $shadow;
+      }
+
+      div {
+        height: 56px;
+      }
+
+      img,
+      iframe {
+        height: 60px;
+        width: 60px;
+        border-radius: 33px;;
+        object-fit: cover;
+        border: solid $color-2 1px,
+      }
+      .trend-content {
+        position: relative;
+        height: 56px;
+
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          font-size: .9rem;
+          color: $color-3;
+        }
+        span {
+          color: $color-2;
+          font-family: $font-2;
+          position: absolute;
+          right: 6px;
+          bottom: -11px;
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
